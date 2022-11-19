@@ -12,8 +12,5 @@ class Faq extends Model
     protected $table = "faq";
     protected $primaryKey = 'Faq_ID';
 
-    protected $fillable = [
-        'FAQ_Question',
-        'FAQ_Answer'
-    ];
+    protected $guarded = [];
 }

@@ -46,9 +46,7 @@ class FaqController
     public function store(Request $request)
     {
 
-        $add_faq = new Faq();
-        $add_faq->FAQ_Question = $request->FAQ_Question;
-        $add_faq->FAQ_Answer = $request->FAQ_Answer;
+        $add_faq =  Faq::create($request->all());
 
         if ($add_faq->save()) {
             return $this->sendResponse(__('faq.faq_added'));
