@@ -5,11 +5,10 @@ namespace Elementcore\Faq;
 use DataTables;
 use Elementcore\Faq\Faq;
 use Illuminate\Http\Request;
-use Elementcore\Faq\Controller;
 // use App\Traits\ImageUpload;
 // use App\Traits\MediaImage;
 
-class FaqController extends Controller
+class FaqController 
 { //--------traits------------
     // use ImageUpload;
     // use MediaImage;
