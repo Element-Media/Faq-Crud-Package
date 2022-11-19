@@ -1,6 +1,7 @@
 {
     "name": "elementcore/faq",
     "type": "library",
+    "license": "MIT",
     "description": "CRUD for FAQ(Frequently Asked Question)",
     "autoload": {
         "psr-4": {
@@ -13,6 +14,13 @@
             "email": "orianasabat@users.noreply.github.com"
         }
     ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "\\Elementcore\\Faq\\FaqServiceProvider"
+            ]
+        }
+    },
     "minimum-stability": "dev",
     "require": {}
 }
