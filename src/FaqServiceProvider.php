@@ -53,9 +53,9 @@ class FaqServiceProvider extends ServiceProvider
                 __DIR__ . '/routes.php' => base_path('routes/faq.php'),
             ], 'routes');
 
-            $this->publishes([
-                __DIR__ . '/Faq.php' => base_path('app/Models/Faq.php'),
-            ], 'models');
+            // $this->publishes([
+            //     __DIR__ . '/Faq.php' => base_path('app/Models/Faq.php'),
+            // ], 'models');
         }
     }
 }
