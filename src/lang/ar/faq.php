@@ -8,5 +8,6 @@ return
         'faq_added' => 'Faq Added Successfully',
         'faq_list' => 'Faq List',
         'faq_updated' => 'Faq Updated Successfully',
+        'faq_deleted' => 'Faq Deleted Successfully'
 
     ];
