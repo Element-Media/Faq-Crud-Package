@@ -5,7 +5,7 @@ namespace Elementcore\Faq;
 use DataTables;
 use Elementcore\Faq\Faq;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
+use Elementcore\Faq\Controller;
 // use App\Traits\ImageUpload;
 // use App\Traits\MediaImage;
 
