@@ -21,6 +21,23 @@ class FaqController extends Controller
     public $is_watermark = 0; //set to 1 to add watermark to images
     public $image_max_size = 2048;
 
+    public function sendResponse($message, $code = 200, $data = null, $data_name = '')
+    {
+        $result['status'] = true;
+        $result['code'] = $code;
+        $result['message'] = $message;
+        $result[$data_name] = $data;
+        return response()->json($result);
+    }
+
+    public function sendError($message, $code = 400)
+    {
+        $result['status'] = false;
+        $result['code'] = $code;
+        $result['message'] = $message;
+        return response()->json($result);
+    }
+
     public function __construct()
     {
         // $this->middleware('admin');
@@ -73,6 +90,13 @@ class FaqController extends Controller
 
     public function destroy($id)
     {
-        return $this->generalDestroy('Elementcore\Faq\Faq', ['Faq_ID' => $id], __('successMessages.faq_deleted'));
+
+        $model = Faq::findorfail($id);
+
+        if ($model->delete()) {
+            return $this->sendResponse(__('faq.faq_deleted'));
+        } else {
+            return $this->sendError(__('errorMessages.something_went_wrong'));
+        }
     }
 }
