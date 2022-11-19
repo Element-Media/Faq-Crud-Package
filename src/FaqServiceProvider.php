@@ -41,9 +41,9 @@ class FaqServiceProvider extends ServiceProvider
                 ),
             ], 'migrations');
 
-            $this->publishes([
-                __DIR__ . '/lang' => resource_path('lang'),
-            ], 'lang');
+            // $this->publishes([
+            //     __DIR__ . '/lang' => resource_path('lang'),
+            // ], 'lang');
 
             $this->publishes([
                 __DIR__ . '/views' => base_path('resources/views/elementcore/faq'),
