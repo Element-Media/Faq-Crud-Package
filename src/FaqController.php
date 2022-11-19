@@ -6,13 +6,13 @@ use DataTables;
 use Elementcore\Faq\Faq;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Traits\ImageUpload;
-use App\Traits\MediaImage;
+// use App\Traits\ImageUpload;
+// use App\Traits\MediaImage;
 
-class FaqController extends Controller
+class FaqController
 { //--------traits------------
-    use ImageUpload;
-    use MediaImage;
+    // use ImageUpload;
+    // use MediaImage;
     //--------------------------
 
     public $image_source = 'faq'; //the path after storage/images
