@@ -9,7 +9,7 @@ use App\Http\Controllers\Controller;
 // use App\Traits\ImageUpload;
 // use App\Traits\MediaImage;
 
-class FaqController
+class FaqController extends Controller
 { //--------traits------------
     // use ImageUpload;
     // use MediaImage;
