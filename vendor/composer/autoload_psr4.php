@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Elementcore\\Keyword\\' => array($baseDir . '/src'),
+    'Elementcore\\Faq\\' => array($baseDir . '/src'),
 );

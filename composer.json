@@ -1,16 +1,16 @@
 {
-    "name": "elementcore/keyword",
+    "name": "elementcore/faq",
     "type": "library",
-    "description": "Tags and keywords that could be used for searching and filtering",
+    "description": "CRUD for FAQ(Frequently Asked Question)",
     "autoload": {
         "psr-4": {
-            "Elementcore\\Keyword\\": "src/"
+            "Elementcore\\Faq\\": "src/"
         }
     },
     "authors": [
         {
-            "name": "DuhaD",
-            "email": "DuhaD@users.noreply.github.com"
+            "name": "orianasabat",
+            "email": "orianasabat@users.noreply.github.com"
         }
     ],
     "minimum-stability": "dev",
